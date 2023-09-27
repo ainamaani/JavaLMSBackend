@@ -15,7 +15,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/library")
-@Validated
 public class BookController {
 
     @Autowired
