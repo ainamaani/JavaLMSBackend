@@ -22,7 +22,7 @@ public class Book extends BaseEntity implements Serializable {
     private Integer edition;
     private String language;
     private Integer numberOfPages;
-    private Integer copyNumber;
+    private Integer numberOfCopies;
     @Enumerated(EnumType.STRING)
     private BookStatus status = BookStatus.AVAILABLE;
 
@@ -106,12 +106,12 @@ public class Book extends BaseEntity implements Serializable {
     }
 
     @Column(name = "copy_number")
-    public Integer getCopyNumber(){
-        return copyNumber;
+    public Integer getNumberOfCopies(){
+        return numberOfCopies;
     }
 
-    public void setCopyNumber(Integer copyNumber){
-        this.copyNumber = copyNumber;
+    public void setNumberOfCopies(Integer numberOfCopies){
+        this.numberOfCopies = numberOfCopies;
     }
 
     @Column(name = "status")

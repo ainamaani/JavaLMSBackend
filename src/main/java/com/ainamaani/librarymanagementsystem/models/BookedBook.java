@@ -1,7 +1,5 @@
 package com.ainamaani.librarymanagementsystem.models;
-
 import jakarta.persistence.*;
-
 import java.io.Serializable;
 
 @Entity

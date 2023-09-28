@@ -50,6 +50,9 @@ public class BookController {
         if(book.getNumberOfPages() == null){
             return ResponseEntity.badRequest().body("Number of pages is required");
         }
+        if(book.getNumberOfCopies() == null){
+            return ResponseEntity.badRequest().body("Number of copies is required");
+        }
         if(book.getLanguage() == null || book.getLanguage().isEmpty()){
             return ResponseEntity.badRequest().body("Language is required");
         }
